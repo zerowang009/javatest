@@ -1,0 +1,131 @@
+   dinning 
+   
+     paysomething();
+   pay 
+   
+   
+   yunnex-zkconfig
+   
+   
+   mall -> pay
+   
+   
+   payService 
+   
+   wsdl
+   
+    <context:component-scan base-package="yunnex.saofu.client.api.service"></context:component-scan>
+   
+   
+   <!-- 服务提供配置 -->
+    <dubbo:provider version="1.0.0" timeout="30000" loadbalance="leastactive" retries="0" threads="500" />
+
+    <!-- 暴露服务端口 -->
+    <dubbo:protocol name="dubbo" port="23335" threadpool="ylimited"/>
+
+	
+	
+   rpc
+   
+   service  ----- export pay (ip zkconfig:host port:23335  <dubbo:service  yunnex.pay.service.PayService  ref=payServiceImpl>)
+   
+   
+   reference ----import pay  dubbo:refrence <dubbo:reference id="payService" interface="yunnex.pay.service.PayService" />
+   
+   loadbalance  --
+   
+   
+   dubbo  
+   
+   
+   paysomething
+ 
+   
+   
+   dubbo---continer framework
+   
+   
+   
+   payService.pay
+   
+   spring 
+   
+   exend spring 
+   
+   
+   
+   dubbo://192.168.1.99:1660/yunnex.cashier.service.CashierPaymentService?anyhost=true&application=app-cashier-mod-service-impl&default.loadbalance=leastactive&default.retries=0&default.serialization=hessian2&default.threads=200&default.timeout=30000&default.version=1.0.0&dubbo=2.8.4&generic=false&interface=yunnex.cashier.service.CashierPaymentService&methods=wxUnifiedOrder,findOrderAndTrade&owner=Allen.W&pid=15941&revision=1.0.0&side=provider×tamp=1492394873184
+
+   nio  socket 
+    waimai  spring --payBean ( socket )--->99-->result-->socket--waimai
+	
+	
+	result 
+	
+	
+	
+	servelt jsp
+	
+	jsp->servlet->html					url
+	
+	javaServerPage --->servlet()   doService(methodType get|post)  doget dopost
+	
+	
+	
+	url1/
+	server1  doserver()
+	url2/
+	servelt2  doService()	
+	
+	
+	web.xml
+	
+	
+	<servlet>
+
+	<class>
+	<url patern >
+	</servlet>
+	
+	outputStream 
+	
+	<table >
+	loop 
+	<c:for  value >
+	
+	while(){
+	   <tr sty;e > value 
+	}
+	
+	html server render 
+	
+	<c:for td>
+	
+	struts 
+	hibernate  bean  {
+	 name 
+	 age 
+	 sex
+	
+			<hbm.xml>
+	
+	}   row--- t_name  ,t_age, t_sex
+	             name  age  sex
+				 
+				 
+				orm object relation mapping 
+				
+				
+				spring 
+	
+	
+	manager/repair_order   url-mapping   hibernate  mybatis
+	
+	json freemarker jsp  
+	
+	
+	spring  service mappper   json freemarker
+   
+   
+    jetty   tomcat
+   
