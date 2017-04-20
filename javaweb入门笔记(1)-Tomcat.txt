@@ -14,3 +14,7 @@ work:Tomcat的工作目录
 %CATALINA_HOME%/RUNNING.txt有详细步骤，简单来说，已经配置好JDK环境的话，windows下直接双击bin/startyp.bat就行了
 
 默认端口是8080，改端口：tomcat的conf/server.xml的Connector标签
+
+
+
+
