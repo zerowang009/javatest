@@ -1,0 +1,16 @@
+Tomcat目录层次结构
+
+bin:存放启动和关闭Tomcat的脚本文件
+conf:存放Tomcat服务器的配置文件
+lib:存放Tomcat服务器的支撑jar包
+logs:存放Tomcat的日志文件
+temp:存放Tomcat运行时产生的临时文件
+webapps:web应用所在的目录，即供外接访问的web资源的存放目录
+work:Tomcat的工作目录
+上面的内容直接可在Tomcat Doc-Directories and Files找到答案
+
+启动Tomcat
+
+%CATALINA_HOME%/RUNNING.txt有详细步骤，简单来说，已经配置好JDK环境的话，windows下直接双击bin/startyp.bat就行了
+
+默认端口是8080，改端口：tomcat的conf/server.xml的Connector标签
